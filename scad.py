@@ -120,9 +120,9 @@ def make_scad(**kwargs):
         
         part = copy.deepcopy(part_default)
         p3 = copy.deepcopy(kwargs)
-        p3["width"] = 3
-        p3["height"] = 3
-        #p3["thickness"] = 6
+        p3["width"] = 10
+        p3["height"] = 14
+        p3["thickness"] = 24
         #p3["extra"] = ""
         part["kwargs"] = p3
         nam = "base"
@@ -131,7 +131,7 @@ def make_scad(**kwargs):
             p3["oomp_size"] = nam
         if not test:
             pass
-            #parts.append(part)
+            parts.append(part)
 
 
     kwargs["parts"] = parts
@@ -164,13 +164,48 @@ def get_base(thing, **kwargs):
     p3 = copy.deepcopy(kwargs)
     p3["type"] = "positive"
     p3["shape"] = f"oobb_plate"    
-    p3["depth"] = depth
+    p3["depth"] = 3
     #p3["holes"] = True         uncomment to include default holes
     #p3["m"] = "#"
     pos1 = copy.deepcopy(pos)         
     p3["pos"] = pos1
     oobb_base.append_full(thing,**p3)
     
+    #add top bottom and side plate
+    p3 = copy.deepcopy(kwargs)
+    p3["type"] = "positive"
+    p3["shape"] = f"oobb_plate"
+    p3["depth"] = depth
+    p3["width"] = width
+    p3["height"] = 1
+    #p3["holes"] = True         uncomment to include default holes
+    #p3["m"] = "#"
+    poss = []
+    pos1 = copy.deepcopy(pos)
+    #pos1[2] += depth/2
+    pos11 = copy.deepcopy(pos1)
+    pos11[1] += (height-1)/2 * 15    
+    poss.append(pos11)
+    pos12 = copy.deepcopy(pos1)
+    pos12[1] += -(height-1)/2 * 15    
+    poss.append(pos12)
+    p3["pos"] = poss
+    oobb_base.append_full(thing,**p3)
+
+    #add back piece
+    p3 = copy.deepcopy(kwargs)
+    p3["type"] = "positive"
+    p3["shape"] = f"oobb_plate"
+    p3["depth"] = depth
+    p3["width"] = 1
+    p3["height"] = height
+    #p3["holes"] = True         uncomment to include default holes
+    #p3["m"] = "#"
+    pos1 = copy.deepcopy(pos)
+    pos1[0] += -(width-1)/2 * 15
+    p3["pos"] = pos1    
+    oobb_base.append_full(thing,**p3)
+
     #add holes seperate
     p3 = copy.deepcopy(kwargs)
     p3["type"] = "p"
