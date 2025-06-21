@@ -19,7 +19,7 @@ parts:
       height: 14
       modes:
       - 3dpr
-      navigation: false
+      navigation: true
       oomp_classification: project
       oomp_color: oomlout_oobb_organizing_project_bolt_pac
       oomp_description_extra: ''
@@ -27,11 +27,12 @@ parts:
       oomp_manufacturer: ''
       oomp_mode: project
       oomp_part_number: ''
-      oomp_run: false
+      oomp_run: true
       oomp_size: oomlout
       oomp_type: github
       overwrite: true
       thickness: 24
+      typ: all
       type: oomlout_oobb_organizing_project_bolt_pac_version_2
       width: 9
     manufacturer: ''
@@ -61,7 +62,7 @@ parts:
       height: 14
       modes:
       - 3dpr
-      navigation: false
+      navigation: true
       oomp_classification: project
       oomp_color: oomlout_oobb_organizing_project_bolt_pac
       oomp_description_extra: base_only_extra
@@ -69,11 +70,12 @@ parts:
       oomp_manufacturer: ''
       oomp_mode: project
       oomp_part_number: ''
-      oomp_run: false
+      oomp_run: true
       oomp_size: oomlout
       oomp_type: github
       overwrite: true
       thickness: 24
+      typ: all
       type: oomlout_oobb_organizing_project_bolt_pac_version_2
       width: 9
     manufacturer: ''
@@ -103,7 +105,7 @@ parts:
       height: 14
       modes:
       - 3dpr
-      navigation: false
+      navigation: true
       oomp_classification: project
       oomp_color: oomlout_oobb_organizing_project_bolt_pac
       oomp_description_extra: lifter_only_extra
@@ -111,11 +113,12 @@ parts:
       oomp_manufacturer: ''
       oomp_mode: project
       oomp_part_number: ''
-      oomp_run: false
+      oomp_run: true
       oomp_size: oomlout
       oomp_type: github
       overwrite: true
       thickness: 24
+      typ: all
       type: oomlout_oobb_organizing_project_bolt_pac_version_2
       width: 9
     manufacturer: ''
