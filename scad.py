@@ -122,21 +122,29 @@ def make_scad(**kwargs):
         #names.append("version_1")
         names.append("version_2")
 
+        extras = []
+        extras.append("")
+        extras.append("base_only")
+        extras.append("lifter_only")
+
+
         for nam in names:
-            part = copy.deepcopy(part_default)
-            p3 = copy.deepcopy(kwargs)
-            p3["width"] = 10
-            p3["height"] = 14
-            p3["thickness"] = 24
-            #p3["extra"] = ""
-            part["kwargs"] = p3
-            #nam = "version_1"
-            part["name"] = nam
-            if oomp_mode == "oobb":
-                p3["oomp_size"] = nam
-            if not test:
-                pass
-                parts.append(part)
+            for ex in extras:
+                part = copy.deepcopy(part_default)
+                p3 = copy.deepcopy(kwargs)
+                p3["width"] = 9
+                p3["height"] = 14
+                p3["thickness"] = 24
+                if ex != "":    
+                    p3["extra"] = ex
+                part["kwargs"] = p3
+                #nam = "version_1"
+                part["name"] = nam
+                if oomp_mode == "oobb":
+                    p3["oomp_size"] = nam
+                if not test:
+                    pass
+                    parts.append(part)
 
 
     kwargs["parts"] = parts
@@ -165,8 +173,18 @@ def get_version_2(thing, **kwargs):
     pos = kwargs.get("pos", [0, 0, 0])
     extra = kwargs.get("extra", "")
     
+
+    positions = []
+    positions.append([1, 1])
+    positions.append([1, height])
+    positions.append([width, 1])
+    positions.append([width, height])
+    positions.append([1, (height+1)/2])
+    positions.append([1, height-3])
+    positions.append([1, 4])
+
     #add base
-    if True:
+    if "lifter_only" not in extra:
         p3 = copy.deepcopy(kwargs)
         p3["type"] = "positive"
         p3["shape"] = f"oobb_plate"    
@@ -214,15 +232,16 @@ def get_version_2(thing, **kwargs):
         p3["shape"] = f"rounded_rectangle"
         dep = 3
         wid = 14
-        hei = 240
+        hei = 230
         size = [wid, hei, dep]
         p3["size"] = size
         #p3["holes"] = True         uncomment to include default holes
         #p3["m"] = "#"
+        angle = 59.7
         if True:
             p4 = copy.deepcopy(p3)
             rot1 = copy.deepcopy(rot)
-            rot1[2] += 90-54.2
+            rot1[2] += 90-angle
             p4["rot"] = rot1
             pos1 = copy.deepcopy(pos)
             p4["pos"] = pos1
@@ -230,38 +249,38 @@ def get_version_2(thing, **kwargs):
         if True:
             p4 = copy.deepcopy(p3)
             rot1 = copy.deepcopy(rot)
-            rot1[2] += 90+54.2
+            rot1[2] += 90+angle
             p4["rot"] = rot1
             pos1 = copy.deepcopy(pos)
             pos1[0] += 0
             p4["pos"] = pos1
             oobb_base.append_full(thing,**p4)
 
+
+        
+
+
+    if True:
         #add holes seperate
+        locs = copy.deepcopy(positions)
+        locs.append([1, 1])
+        locs.append([1, height])
+        locs.append([width, 1])
+        locs.append([width, height])
         p3 = copy.deepcopy(kwargs)
         p3["type"] = "p"
         p3["shape"] = f"oobb_holes"
         p3["both_holes"] = False  
         p3["depth"] = depth
-        p3["holes"] = "corner"
+        p3["holes"] = "single"
+        p3["location"] = locs
         #p3["m"] = "#"
         pos1 = copy.deepcopy(pos)         
         p3["pos"] = pos1
         oobb_base.append_full(thing,**p3)
     
     #add lifters
-    if True:
-        positions = []
-        positions.append([1, 1])
-        positions.append([1, height])
-        positions.append([width, 1])
-        positions.append([width, height])
-        positions.append([1, (height+1)/2])
-        positions.append([1, height-3])
-        positions.append([1, 4])
-
-
-                         
+    if "base_only" not in extra:             
         #add top bottom and side plate
         p3 = copy.deepcopy(kwargs)
         p3["type"] = "positive"
