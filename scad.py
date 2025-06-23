@@ -120,31 +120,36 @@ def make_scad(**kwargs):
         
         names = []
         #names.append("version_1")
-        names.append("version_2")
+        #names.append("version_2")
+        names.append("version_3")
 
         extras = []
         extras.append("")
         extras.append("base_only")
         extras.append("lifter_only")
 
+        sizes = []
+        sizes.append([9,14])
+        sizes.append([11,12]) #version 2
 
         for nam in names:
             for ex in extras:
-                part = copy.deepcopy(part_default)
-                p3 = copy.deepcopy(kwargs)
-                p3["width"] = 9
-                p3["height"] = 14
-                p3["thickness"] = 24
-                if ex != "":    
-                    p3["extra"] = ex
-                part["kwargs"] = p3
-                #nam = "version_1"
-                part["name"] = nam
-                if oomp_mode == "oobb":
-                    p3["oomp_size"] = nam
-                if not test:
-                    pass
-                    parts.append(part)
+                for siz in sizes:
+                    part = copy.deepcopy(part_default)
+                    p3 = copy.deepcopy(kwargs)
+                    p3["width"] = siz[0]
+                    p3["height"] = siz[1]
+                    p3["thickness"] = 24
+                    if ex != "":    
+                        p3["extra"] = ex
+                    part["kwargs"] = p3
+                    #nam = "version_1"
+                    part["name"] = nam
+                    if oomp_mode == "oobb":
+                        p3["oomp_size"] = nam
+                    if not test:
+                        pass
+                        parts.append(part)
 
 
     kwargs["parts"] = parts
@@ -162,6 +167,157 @@ def make_scad(**kwargs):
         
         scad_help.generate_navigation(sort = sort)
 
+def get_version_3(thing, **kwargs):
+    import math
+    prepare_print = kwargs.get("prepare_print", False)
+    width = kwargs.get("width", 1)
+    width_mm = (width * 15)-1
+    height = kwargs.get("height", 1)
+    height_mm = (height * 15)-1
+    depth = kwargs.get("thickness", 3)                    
+    rot = kwargs.get("rot", [0, 0, 0])
+    pos = kwargs.get("pos", [0, 0, 0])
+    extra = kwargs.get("extra", "")
+    
+
+    positions = []
+    positions.append([1, 1])
+    positions.append([1, height])
+    positions.append([width, 1])
+    positions.append([width, height])
+    positions.append([(width+1)/2, 1])
+    positions.append([(width)-2, 1])
+    positions.append([3, 1])
+    up_shift = 4
+    positions.append([1, up_shift])
+    positions.append([width, up_shift])
+    up_shift_2 = 8
+    positions.append([1, up_shift_2])
+    positions.append([width, up_shift_2])
+
+    
+
+    #add base
+    if "lifter_only" not in extra:
+        p3 = copy.deepcopy(kwargs)
+        p3["type"] = "positive"
+        p3["shape"] = f"oobb_plate"    
+        p3["width"] = width
+        p3["height"] = 1
+        p3["depth"] = 3
+        #p3["holes"] = True         uncomment to include default holes
+        #p3["m"] = "#"
+        pos1 = copy.deepcopy(pos)         
+        poss = []
+        pos11 = copy.deepcopy(pos1)
+        pos11[1] += (height-1)/2*15
+        poss.append(pos11)
+        pos12 = copy.deepcopy(pos1)
+        pos12[1] += -(height-1)/2*15
+        poss.append(pos12)
+
+        p3["pos"] = poss
+        oobb_base.append_full(thing,**p3)
+
+        #add back piece
+        p3 = copy.deepcopy(kwargs)
+        p3["type"] = "positive"
+        p3["shape"] = f"oobb_plate"
+        p3["depth"] = 3
+        p3["width"] = 1
+        p3["height"] = height
+        #p3["holes"] = True         uncomment to include default holes
+        #p3["m"] = "#"
+        pos1 = copy.deepcopy(pos)
+        pos1[0] += 0
+        poss   = []
+        pos11 = copy.deepcopy(pos1)
+        pos11[0] += (width-1)/2 * 15
+        poss.append(pos11)
+        pos12 = copy.deepcopy(pos1)
+        pos12[0] += -(width-1)/2 * 15
+        poss.append(pos12)
+        p3["pos"] = poss
+        oobb_base.append_full(thing,**p3)
+
+        #add crosses
+        length_hypotenuse = math.sqrt(width_mm**2 + height_mm**2) - 10
+        angle = math.degrees(math.atan(height_mm/width_mm))
+        p3 = copy.deepcopy(kwargs)
+        p3["type"] = "positive"
+        p3["shape"] = f"rounded_rectangle"
+        dep = 3
+        wid = 14
+        hei = length_hypotenuse
+        size = [wid, hei, dep]
+        p3["size"] = size
+        #p3["holes"] = True         uncomment to include default holes
+        #p3["m"] = "#"
+        #angle = 59.7
+        if True:
+            p4 = copy.deepcopy(p3)
+            rot1 = copy.deepcopy(rot)
+            rot1[2] += 90-angle
+            p4["rot"] = rot1
+            pos1 = copy.deepcopy(pos)
+            p4["pos"] = pos1
+            oobb_base.append_full(thing,**p4)
+        if True:
+            p4 = copy.deepcopy(p3)
+            rot1 = copy.deepcopy(rot)
+            rot1[2] += 90+angle
+            p4["rot"] = rot1
+            pos1 = copy.deepcopy(pos)
+            pos1[0] += 0
+            p4["pos"] = pos1
+            oobb_base.append_full(thing,**p4)
+
+
+        
+
+
+    if True:
+        #add holes seperate
+        locs = copy.deepcopy(positions)
+        locs.append([1, 1])
+        locs.append([1, height])
+        locs.append([width, 1])
+        locs.append([width, height])
+        p3 = copy.deepcopy(kwargs)
+        p3["type"] = "p"
+        p3["shape"] = f"oobb_holes"
+        p3["both_holes"] = False  
+        p3["depth"] = depth
+        p3["holes"] = "single"
+        p3["location"] = locs
+        #p3["m"] = "#"
+        pos1 = copy.deepcopy(pos)         
+        p3["pos"] = pos1
+        oobb_base.append_full(thing,**p3)
+    
+    #add lifters
+    if "base_only" not in extra:             
+        #add top bottom and side plate
+        p3 = copy.deepcopy(kwargs)
+        p3["type"] = "positive"
+        p3["shape"] = f"oobb_plate"
+        p3["depth"] = depth
+        p3["width"] = 1
+        p3["height"] = 1
+        #p3["holes"] = True         uncomment to include default holes
+        #p3["m"] = "#"
+        poss = []
+        pos1 = copy.deepcopy(pos)
+        pos1[0] += -(width-1)/2*15
+        pos1[1] += -(height-1)/2*15 
+        for p in positions:
+            pos11 = copy.deepcopy(pos1)
+            pos11[0] += (p[0]-1) * 15
+            pos11[1] += (p[1]-1) * 15
+            poss.append(pos11)
+        
+        p3["pos"] = poss
+        oobb_base.append_full(thing,**p3)
 
 def get_version_2(thing, **kwargs):
 

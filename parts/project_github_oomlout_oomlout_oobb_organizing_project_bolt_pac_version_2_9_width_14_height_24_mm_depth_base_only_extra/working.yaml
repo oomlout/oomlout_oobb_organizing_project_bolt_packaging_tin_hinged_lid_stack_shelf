@@ -18,7 +18,7 @@ kwargs:
   height: 14
   modes:
   - 3dpr
-  navigation: true
+  navigation: false
   oomp_classification: project
   oomp_color: oomlout_oobb_organizing_project_bolt_pac
   oomp_description_extra: base_only_extra
@@ -26,12 +26,11 @@ kwargs:
   oomp_manufacturer: ''
   oomp_mode: project
   oomp_part_number: ''
-  oomp_run: true
+  oomp_run: false
   oomp_size: oomlout
   oomp_type: github
   overwrite: true
   thickness: 24
-  typ: all
   type: oomlout_oobb_organizing_project_bolt_pac_version_2
   width: 9
 manufacturer: ''

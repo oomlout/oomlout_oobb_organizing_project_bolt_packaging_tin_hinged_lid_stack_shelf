@@ -1,0 +1,691 @@
+classification: project
+color: oomlout_oobb_organizing_project_bolt_pac
+description_extra: base_only_extra
+description_main: version_2_11_width_12_height_24_mm_depth
+full_rotations:
+- 0
+- 0
+- 0
+full_shift:
+- 0
+- 0
+- 0
+id: project_github_oomlout_oomlout_oobb_organizing_project_bolt_pac_version_2_11_width_12_height_24_mm_depth_base_only_extra
+id_oobb: oobb_part_oomlout_oobb_organizing_project_bolt_pac_version_2_11_width_12_height_24_mm_depth_base_only_extra
+kwargs:
+  extra: base_only
+  filter: ''
+  height: 12
+  modes:
+  - 3dpr
+  navigation: false
+  oomp_classification: project
+  oomp_color: oomlout_oobb_organizing_project_bolt_pac
+  oomp_description_extra: base_only_extra
+  oomp_description_main: version_2_11_width_12_height_24_mm_depth
+  oomp_manufacturer: ''
+  oomp_mode: project
+  oomp_part_number: ''
+  oomp_run: false
+  oomp_size: oomlout
+  oomp_type: github
+  overwrite: true
+  thickness: 24
+  type: oomlout_oobb_organizing_project_bolt_pac_version_2
+  width: 11
+manufacturer: ''
+name: version_2
+part_number: ''
+project_name: C:\gh\oomlout_oobb_organizing_project_bolt_packaging_tin_hinged_lid_stack_shelf
+size: oomlout
+thing:
+  classification: oobb
+  color: ''
+  components:
+  - - depth: 3
+      extra: base_only
+      height: 1
+      pos:
+      - 0
+      - 82.5
+      - 0
+      shape: rounded_rectangle
+      size:
+      - 164
+      - 14
+      - 3
+      type: positive
+      width: 11
+  - - depth: 3
+      extra: base_only
+      height: 1
+      pos:
+      - 0
+      - -82.5
+      - 0
+      shape: rounded_rectangle
+      size:
+      - 164
+      - 14
+      - 3
+      type: positive
+      width: 11
+  - - depth: 3
+      extra: base_only
+      height: 12
+      pos:
+      - 75.0
+      - 0
+      - 0
+      shape: rounded_rectangle
+      size:
+      - 14
+      - 179
+      - 3
+      type: positive
+      width: 1
+  - - depth: 3
+      extra: base_only
+      height: 12
+      pos:
+      - -75.0
+      - 0
+      - 0
+      shape: rounded_rectangle
+      size:
+      - 14
+      - 179
+      - 3
+      type: positive
+      width: 1
+  - - extra: base_only
+      height: 12
+      pos:
+      - 0
+      - 0
+      - 0
+      rot:
+      - 0
+      - 0
+      - 30.299999999999997
+      shape: rounded_rectangle
+      size:
+      - 14
+      - 230
+      - 3
+      type: positive
+      width: 11
+  - - extra: base_only
+      height: 12
+      pos:
+      - 0
+      - 0
+      - 0
+      rot:
+      - 0
+      - 0
+      - 149.7
+      shape: rounded_rectangle
+      size:
+      - 14
+      - 230
+      - 3
+      type: positive
+      width: 11
+  - - - depth: 24
+        h: 24
+        inclusion: laser
+        m: ''
+        pos: &id001
+        - -75.0
+        - -82.5
+        - 0
+        r: 3.0
+        shape: cylinder
+        type: negative
+      - depth: 24
+        h: 24
+        inclusion: 3dpr
+        m: ''
+        pos: *id001
+        r: 3.25
+        shape: cylinder
+        type: negative
+      - depth: 24
+        h: 24
+        inclusion: 'true'
+        m: ''
+        pos: *id001
+        r: 3.0
+        shape: cylinder
+        type: negative
+    - - depth: 24
+        h: 24
+        inclusion: laser
+        m: ''
+        pos: &id002
+        - -75.0
+        - 82.5
+        - 0
+        r: 3.0
+        shape: cylinder
+        type: negative
+      - depth: 24
+        h: 24
+        inclusion: 3dpr
+        m: ''
+        pos: *id002
+        r: 3.25
+        shape: cylinder
+        type: negative
+      - depth: 24
+        h: 24
+        inclusion: 'true'
+        m: ''
+        pos: *id002
+        r: 3.0
+        shape: cylinder
+        type: negative
+    - - depth: 24
+        h: 24
+        inclusion: laser
+        m: ''
+        pos: &id003
+        - 75.0
+        - -82.5
+        - 0
+        r: 3.0
+        shape: cylinder
+        type: negative
+      - depth: 24
+        h: 24
+        inclusion: 3dpr
+        m: ''
+        pos: *id003
+        r: 3.25
+        shape: cylinder
+        type: negative
+      - depth: 24
+        h: 24
+        inclusion: 'true'
+        m: ''
+        pos: *id003
+        r: 3.0
+        shape: cylinder
+        type: negative
+    - - depth: 24
+        h: 24
+        inclusion: laser
+        m: ''
+        pos: &id004
+        - 75.0
+        - 82.5
+        - 0
+        r: 3.0
+        shape: cylinder
+        type: negative
+      - depth: 24
+        h: 24
+        inclusion: 3dpr
+        m: ''
+        pos: *id004
+        r: 3.25
+        shape: cylinder
+        type: negative
+      - depth: 24
+        h: 24
+        inclusion: 'true'
+        m: ''
+        pos: *id004
+        r: 3.0
+        shape: cylinder
+        type: negative
+    - - depth: 24
+        h: 24
+        inclusion: laser
+        m: ''
+        pos: &id005
+        - -75.0
+        - 0.0
+        - 0
+        r: 3.0
+        shape: cylinder
+        type: negative
+      - depth: 24
+        h: 24
+        inclusion: 3dpr
+        m: ''
+        pos: *id005
+        r: 3.25
+        shape: cylinder
+        type: negative
+      - depth: 24
+        h: 24
+        inclusion: 'true'
+        m: ''
+        pos: *id005
+        r: 3.0
+        shape: cylinder
+        type: negative
+    - - depth: 24
+        h: 24
+        inclusion: laser
+        m: ''
+        pos: &id006
+        - -75.0
+        - 37.5
+        - 0
+        r: 3.0
+        shape: cylinder
+        type: negative
+      - depth: 24
+        h: 24
+        inclusion: 3dpr
+        m: ''
+        pos: *id006
+        r: 3.25
+        shape: cylinder
+        type: negative
+      - depth: 24
+        h: 24
+        inclusion: 'true'
+        m: ''
+        pos: *id006
+        r: 3.0
+        shape: cylinder
+        type: negative
+    - - depth: 24
+        h: 24
+        inclusion: laser
+        m: ''
+        pos: &id007
+        - -75.0
+        - -37.5
+        - 0
+        r: 3.0
+        shape: cylinder
+        type: negative
+      - depth: 24
+        h: 24
+        inclusion: 3dpr
+        m: ''
+        pos: *id007
+        r: 3.25
+        shape: cylinder
+        type: negative
+      - depth: 24
+        h: 24
+        inclusion: 'true'
+        m: ''
+        pos: *id007
+        r: 3.0
+        shape: cylinder
+        type: negative
+    - - depth: 24
+        h: 24
+        inclusion: laser
+        m: ''
+        pos: &id008
+        - -75.0
+        - -82.5
+        - 0
+        r: 3.0
+        shape: cylinder
+        type: negative
+      - depth: 24
+        h: 24
+        inclusion: 3dpr
+        m: ''
+        pos: *id008
+        r: 3.25
+        shape: cylinder
+        type: negative
+      - depth: 24
+        h: 24
+        inclusion: 'true'
+        m: ''
+        pos: *id008
+        r: 3.0
+        shape: cylinder
+        type: negative
+    - - depth: 24
+        h: 24
+        inclusion: laser
+        m: ''
+        pos: &id009
+        - -75.0
+        - 82.5
+        - 0
+        r: 3.0
+        shape: cylinder
+        type: negative
+      - depth: 24
+        h: 24
+        inclusion: 3dpr
+        m: ''
+        pos: *id009
+        r: 3.25
+        shape: cylinder
+        type: negative
+      - depth: 24
+        h: 24
+        inclusion: 'true'
+        m: ''
+        pos: *id009
+        r: 3.0
+        shape: cylinder
+        type: negative
+    - - depth: 24
+        h: 24
+        inclusion: laser
+        m: ''
+        pos: &id010
+        - 75.0
+        - -82.5
+        - 0
+        r: 3.0
+        shape: cylinder
+        type: negative
+      - depth: 24
+        h: 24
+        inclusion: 3dpr
+        m: ''
+        pos: *id010
+        r: 3.25
+        shape: cylinder
+        type: negative
+      - depth: 24
+        h: 24
+        inclusion: 'true'
+        m: ''
+        pos: *id010
+        r: 3.0
+        shape: cylinder
+        type: negative
+    - - depth: 24
+        h: 24
+        inclusion: laser
+        m: ''
+        pos: &id011
+        - 75.0
+        - 82.5
+        - 0
+        r: 3.0
+        shape: cylinder
+        type: negative
+      - depth: 24
+        h: 24
+        inclusion: 3dpr
+        m: ''
+        pos: *id011
+        r: 3.25
+        shape: cylinder
+        type: negative
+      - depth: 24
+        h: 24
+        inclusion: 'true'
+        m: ''
+        pos: *id011
+        r: 3.0
+        shape: cylinder
+        type: negative
+  components_objects:
+  - depth: 3
+    extra: base_only
+    filter: ''
+    height: 1
+    modes:
+    - 3dpr
+    navigation: false
+    oomp_classification: project
+    oomp_color: oomlout_oobb_organizing_project_bolt_pac
+    oomp_description_extra: ''
+    oomp_description_main: ''
+    oomp_manufacturer: ''
+    oomp_mode: project
+    oomp_part_number: ''
+    oomp_run: false
+    oomp_size: oomlout
+    oomp_type: github
+    overwrite: true
+    pos:
+    - 0
+    - 82.5
+    - 0
+    save_type: none
+    shape: oobb_plate
+    thickness: 24
+    type: positive
+    width: 11
+  - depth: 3
+    extra: base_only
+    filter: ''
+    height: 1
+    modes:
+    - 3dpr
+    navigation: false
+    oomp_classification: project
+    oomp_color: oomlout_oobb_organizing_project_bolt_pac
+    oomp_description_extra: ''
+    oomp_description_main: ''
+    oomp_manufacturer: ''
+    oomp_mode: project
+    oomp_part_number: ''
+    oomp_run: false
+    oomp_size: oomlout
+    oomp_type: github
+    overwrite: true
+    pos:
+    - 0
+    - -82.5
+    - 0
+    save_type: none
+    shape: oobb_plate
+    thickness: 24
+    type: positive
+    width: 11
+  - depth: 3
+    extra: base_only
+    filter: ''
+    height: 12
+    modes:
+    - 3dpr
+    navigation: false
+    oomp_classification: project
+    oomp_color: oomlout_oobb_organizing_project_bolt_pac
+    oomp_description_extra: ''
+    oomp_description_main: ''
+    oomp_manufacturer: ''
+    oomp_mode: project
+    oomp_part_number: ''
+    oomp_run: false
+    oomp_size: oomlout
+    oomp_type: github
+    overwrite: true
+    pos:
+    - 75.0
+    - 0
+    - 0
+    save_type: none
+    shape: oobb_plate
+    thickness: 24
+    type: positive
+    width: 1
+  - depth: 3
+    extra: base_only
+    filter: ''
+    height: 12
+    modes:
+    - 3dpr
+    navigation: false
+    oomp_classification: project
+    oomp_color: oomlout_oobb_organizing_project_bolt_pac
+    oomp_description_extra: ''
+    oomp_description_main: ''
+    oomp_manufacturer: ''
+    oomp_mode: project
+    oomp_part_number: ''
+    oomp_run: false
+    oomp_size: oomlout
+    oomp_type: github
+    overwrite: true
+    pos:
+    - -75.0
+    - 0
+    - 0
+    save_type: none
+    shape: oobb_plate
+    thickness: 24
+    type: positive
+    width: 1
+  - extra: base_only
+    filter: ''
+    height: 12
+    modes:
+    - 3dpr
+    navigation: false
+    oomp_classification: project
+    oomp_color: oomlout_oobb_organizing_project_bolt_pac
+    oomp_description_extra: ''
+    oomp_description_main: ''
+    oomp_manufacturer: ''
+    oomp_mode: project
+    oomp_part_number: ''
+    oomp_run: false
+    oomp_size: oomlout
+    oomp_type: github
+    overwrite: true
+    pos:
+    - 0
+    - 0
+    - 0
+    rot:
+    - 0
+    - 0
+    - 30.299999999999997
+    save_type: none
+    shape: rounded_rectangle
+    size:
+    - 14
+    - 230
+    - 3
+    thickness: 24
+    type: positive
+    width: 11
+  - extra: base_only
+    filter: ''
+    height: 12
+    modes:
+    - 3dpr
+    navigation: false
+    oomp_classification: project
+    oomp_color: oomlout_oobb_organizing_project_bolt_pac
+    oomp_description_extra: ''
+    oomp_description_main: ''
+    oomp_manufacturer: ''
+    oomp_mode: project
+    oomp_part_number: ''
+    oomp_run: false
+    oomp_size: oomlout
+    oomp_type: github
+    overwrite: true
+    pos:
+    - 0
+    - 0
+    - 0
+    rot:
+    - 0
+    - 0
+    - 149.7
+    save_type: none
+    shape: rounded_rectangle
+    size:
+    - 14
+    - 230
+    - 3
+    thickness: 24
+    type: positive
+    width: 11
+  - both_holes: false
+    depth: 24
+    extra: base_only
+    filter: ''
+    height: 12
+    holes: single
+    location:
+    - - 1
+      - 1
+    - - 1
+      - 12
+    - - 11
+      - 1
+    - - 11
+      - 12
+    - - 1
+      - 6.5
+    - - 1
+      - 9
+    - - 1
+      - 4
+    - - 1
+      - 1
+    - - 1
+      - 12
+    - - 11
+      - 1
+    - - 11
+      - 12
+    modes:
+    - 3dpr
+    navigation: false
+    oomp_classification: project
+    oomp_color: oomlout_oobb_organizing_project_bolt_pac
+    oomp_description_extra: ''
+    oomp_description_main: ''
+    oomp_manufacturer: ''
+    oomp_mode: project
+    oomp_part_number: ''
+    oomp_run: false
+    oomp_size: oomlout
+    oomp_type: github
+    overwrite: true
+    pos:
+    - 0
+    - 0
+    - 0
+    save_type: none
+    shape: oobb_holes
+    thickness: 24
+    type: p
+    width: 11
+  components_string:
+  - oobb_plate_shape_positive_type_3_depth_0_82.5_0_pos_none_save_type_false_navigation_true_overwrite_'3dpr'_modes_project_oomp_mode_false_oomp_run_11_width_1_height_24_thickness_project_oomp_classification_github_oomp_type_oomlout_oomp_size_oomlout_oobb_organizing_project_bolt_pac_oomp_color_base_only_extra
+  - oobb_plate_shape_positive_type_3_depth_0_-82.5_0_pos_none_save_type_false_navigation_true_overwrite_'3dpr'_modes_project_oomp_mode_false_oomp_run_11_width_1_height_24_thickness_project_oomp_classification_github_oomp_type_oomlout_oomp_size_oomlout_oobb_organizing_project_bolt_pac_oomp_color_base_only_extra
+  - oobb_plate_shape_positive_type_3_depth_75.0_0_0_pos_none_save_type_false_navigation_true_overwrite_'3dpr'_modes_project_oomp_mode_false_oomp_run_1_width_12_height_24_thickness_project_oomp_classification_github_oomp_type_oomlout_oomp_size_oomlout_oobb_organizing_project_bolt_pac_oomp_color_base_only_extra
+  - oobb_plate_shape_positive_type_3_depth_-75.0_0_0_pos_none_save_type_false_navigation_true_overwrite_'3dpr'_modes_project_oomp_mode_false_oomp_run_1_width_12_height_24_thickness_project_oomp_classification_github_oomp_type_oomlout_oomp_size_oomlout_oobb_organizing_project_bolt_pac_oomp_color_base_only_extra
+  - rounded_rectangle_shape_positive_type_none_save_type_false_navigation_true_overwrite_'3dpr'_modes_project_oomp_mode_false_oomp_run_11_width_12_height_24_thickness_project_oomp_classification_github_oomp_type_oomlout_oomp_size_oomlout_oobb_organizing_project_bolt_pac_oomp_color_base_only_extra_14_230_3_size_0_0_30.299999999999997_rot
+  - rounded_rectangle_shape_positive_type_none_save_type_false_navigation_true_overwrite_'3dpr'_modes_project_oomp_mode_false_oomp_run_11_width_12_height_24_thickness_project_oomp_classification_github_oomp_type_oomlout_oomp_size_oomlout_oobb_organizing_project_bolt_pac_oomp_color_base_only_extra_14_230_3_size_0_0_149.7_rot
+  - oobb_holes_shape_p_type_24_depth_none_save_type_false_navigation_true_overwrite_'3dpr'_modes_project_oomp_mode_false_oomp_run_11_width_12_height_24_thickness_project_oomp_classification_github_oomp_type_oomlout_oomp_size_oomlout_oobb_organizing_project_bolt_pac_oomp_color_base_only_extra_false_both_holes_single_holes_1_1_1_12_11_1_11_12_1_6.5_1_9_1_4_1_1_1_12_11_1_11_12_location
+  description: oomlout oobb organizing project bolt pac version 2 11x12x24
+  description_extra: base_only_extra
+  description_main: 11_width_12_height_24_mm_depth
+  extra: base_only
+  folder: C:\gh\oomlout_oobb_version_4_generated_parts\parts\oobb_part_oomlout_oobb_organizing_project_bolt_pac_version_2_11_width_12_height_24_mm_depth_base_only_extra
+  height: 12
+  height_mm: 179
+  id: oobb_part_oomlout_oobb_organizing_project_bolt_pac_version_2_11_width_12_height_24_mm_depth_base_only_extra
+  link_main: https://github.com/oomlout/oomlout_oobb_version_4_generated_parts/tree/main/navigation_oomp/oobb/part/oomlout_oobb_organizing_project_bolt_pac_version_2/11_width_12_height_24_mm_depth/base_only_extra/part
+  link_redirect: https://github.com/oomlout/oomlout_oobb_version_4_generated_parts/tree/main/parts/oobb_oomlout_oobb_organizing_project_bolt_pac_version_2_11_12_24_ex_base_only
+  manufacturer: ''
+  name: Oobb Part Oomlout Oobb Organizing Project Bolt Pac Version 2 11 Width 12 Height
+    24 mm Depth Base Only Extra
+  name_short: Oomlout Oobb Organizing Project Bolt
+  part_number: ''
+  short_name: ''
+  size: oomlout_oobb_organizing_project_bolt_pac_version_2
+  thickness: 24
+  thickness_mm: 24
+  type: part
+  width: 11
+  width_mm: 164
+type: github
