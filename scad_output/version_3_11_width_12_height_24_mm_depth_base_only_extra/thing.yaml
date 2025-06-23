@@ -18,7 +18,7 @@ kwargs:
   height: 12
   modes:
   - 3dpr
-  navigation: false
+  navigation: true
   oomp_classification: project
   oomp_color: oomlout_oobb_organizing_project_bolt_pac
   oomp_description_extra: base_only_extra
@@ -26,11 +26,12 @@ kwargs:
   oomp_manufacturer: ''
   oomp_mode: project
   oomp_part_number: ''
-  oomp_run: false
+  oomp_run: true
   oomp_size: oomlout
   oomp_type: github
   overwrite: true
   thickness: 24
+  typ: all
   type: oomlout_oobb_organizing_project_bolt_pac_version_3
   width: 11
 manufacturer: ''
@@ -544,7 +545,7 @@ thing:
     height: 1
     modes:
     - 3dpr
-    navigation: false
+    navigation: true
     oomp_classification: project
     oomp_color: oomlout_oobb_organizing_project_bolt_pac
     oomp_description_extra: ''
@@ -552,7 +553,7 @@ thing:
     oomp_manufacturer: ''
     oomp_mode: project
     oomp_part_number: ''
-    oomp_run: false
+    oomp_run: true
     oomp_size: oomlout
     oomp_type: github
     overwrite: true
@@ -560,9 +561,10 @@ thing:
     - 0
     - 82.5
     - 0
-    save_type: none
+    save_type: all
     shape: oobb_plate
     thickness: 24
+    typ: all
     type: positive
     width: 11
   - depth: 3
@@ -571,7 +573,7 @@ thing:
     height: 1
     modes:
     - 3dpr
-    navigation: false
+    navigation: true
     oomp_classification: project
     oomp_color: oomlout_oobb_organizing_project_bolt_pac
     oomp_description_extra: ''
@@ -579,7 +581,7 @@ thing:
     oomp_manufacturer: ''
     oomp_mode: project
     oomp_part_number: ''
-    oomp_run: false
+    oomp_run: true
     oomp_size: oomlout
     oomp_type: github
     overwrite: true
@@ -587,9 +589,10 @@ thing:
     - 0
     - -82.5
     - 0
-    save_type: none
+    save_type: all
     shape: oobb_plate
     thickness: 24
+    typ: all
     type: positive
     width: 11
   - depth: 3
@@ -598,7 +601,7 @@ thing:
     height: 12
     modes:
     - 3dpr
-    navigation: false
+    navigation: true
     oomp_classification: project
     oomp_color: oomlout_oobb_organizing_project_bolt_pac
     oomp_description_extra: ''
@@ -606,7 +609,7 @@ thing:
     oomp_manufacturer: ''
     oomp_mode: project
     oomp_part_number: ''
-    oomp_run: false
+    oomp_run: true
     oomp_size: oomlout
     oomp_type: github
     overwrite: true
@@ -614,9 +617,10 @@ thing:
     - 75.0
     - 0
     - 0
-    save_type: none
+    save_type: all
     shape: oobb_plate
     thickness: 24
+    typ: all
     type: positive
     width: 1
   - depth: 3
@@ -625,7 +629,7 @@ thing:
     height: 12
     modes:
     - 3dpr
-    navigation: false
+    navigation: true
     oomp_classification: project
     oomp_color: oomlout_oobb_organizing_project_bolt_pac
     oomp_description_extra: ''
@@ -633,7 +637,7 @@ thing:
     oomp_manufacturer: ''
     oomp_mode: project
     oomp_part_number: ''
-    oomp_run: false
+    oomp_run: true
     oomp_size: oomlout
     oomp_type: github
     overwrite: true
@@ -641,9 +645,10 @@ thing:
     - -75.0
     - 0
     - 0
-    save_type: none
+    save_type: all
     shape: oobb_plate
     thickness: 24
+    typ: all
     type: positive
     width: 1
   - extra: base_only
@@ -651,7 +656,7 @@ thing:
     height: 12
     modes:
     - 3dpr
-    navigation: false
+    navigation: true
     oomp_classification: project
     oomp_color: oomlout_oobb_organizing_project_bolt_pac
     oomp_description_extra: ''
@@ -659,7 +664,7 @@ thing:
     oomp_manufacturer: ''
     oomp_mode: project
     oomp_part_number: ''
-    oomp_run: false
+    oomp_run: true
     oomp_size: oomlout
     oomp_type: github
     overwrite: true
@@ -671,13 +676,14 @@ thing:
     - 0
     - 0
     - 42.49594915839299
-    save_type: none
+    save_type: all
     shape: rounded_rectangle
     size:
     - 14
     - 232.76943794472976
     - 3
     thickness: 24
+    typ: all
     type: positive
     width: 11
   - extra: base_only
@@ -685,7 +691,7 @@ thing:
     height: 12
     modes:
     - 3dpr
-    navigation: false
+    navigation: true
     oomp_classification: project
     oomp_color: oomlout_oobb_organizing_project_bolt_pac
     oomp_description_extra: ''
@@ -693,7 +699,7 @@ thing:
     oomp_manufacturer: ''
     oomp_mode: project
     oomp_part_number: ''
-    oomp_run: false
+    oomp_run: true
     oomp_size: oomlout
     oomp_type: github
     overwrite: true
@@ -705,13 +711,14 @@ thing:
     - 0
     - 0
     - 137.504050841607
-    save_type: none
+    save_type: all
     shape: rounded_rectangle
     size:
     - 14
     - 232.76943794472976
     - 3
     thickness: 24
+    typ: all
     type: positive
     width: 11
   - both_holes: false
@@ -753,7 +760,7 @@ thing:
       - 12
     modes:
     - 3dpr
-    navigation: false
+    navigation: true
     oomp_classification: project
     oomp_color: oomlout_oobb_organizing_project_bolt_pac
     oomp_description_extra: ''
@@ -761,7 +768,7 @@ thing:
     oomp_manufacturer: ''
     oomp_mode: project
     oomp_part_number: ''
-    oomp_run: false
+    oomp_run: true
     oomp_size: oomlout
     oomp_type: github
     overwrite: true
@@ -769,19 +776,20 @@ thing:
     - 0
     - 0
     - 0
-    save_type: none
+    save_type: all
     shape: oobb_holes
     thickness: 24
+    typ: all
     type: p
     width: 11
   components_string:
-  - oobb_plate_shape_positive_type_3_depth_0_82.5_0_pos_none_save_type_false_navigation_true_overwrite_'3dpr'_modes_project_oomp_mode_false_oomp_run_11_width_1_height_24_thickness_project_oomp_classification_github_oomp_type_oomlout_oomp_size_oomlout_oobb_organizing_project_bolt_pac_oomp_color_base_only_extra
-  - oobb_plate_shape_positive_type_3_depth_0_-82.5_0_pos_none_save_type_false_navigation_true_overwrite_'3dpr'_modes_project_oomp_mode_false_oomp_run_11_width_1_height_24_thickness_project_oomp_classification_github_oomp_type_oomlout_oomp_size_oomlout_oobb_organizing_project_bolt_pac_oomp_color_base_only_extra
-  - oobb_plate_shape_positive_type_3_depth_75.0_0_0_pos_none_save_type_false_navigation_true_overwrite_'3dpr'_modes_project_oomp_mode_false_oomp_run_1_width_12_height_24_thickness_project_oomp_classification_github_oomp_type_oomlout_oomp_size_oomlout_oobb_organizing_project_bolt_pac_oomp_color_base_only_extra
-  - oobb_plate_shape_positive_type_3_depth_-75.0_0_0_pos_none_save_type_false_navigation_true_overwrite_'3dpr'_modes_project_oomp_mode_false_oomp_run_1_width_12_height_24_thickness_project_oomp_classification_github_oomp_type_oomlout_oomp_size_oomlout_oobb_organizing_project_bolt_pac_oomp_color_base_only_extra
-  - rounded_rectangle_shape_positive_type_none_save_type_false_navigation_true_overwrite_'3dpr'_modes_project_oomp_mode_false_oomp_run_11_width_12_height_24_thickness_project_oomp_classification_github_oomp_type_oomlout_oomp_size_oomlout_oobb_organizing_project_bolt_pac_oomp_color_base_only_extra_14_232.76943794472976_3_size_0_0_42.49594915839299_rot
-  - rounded_rectangle_shape_positive_type_none_save_type_false_navigation_true_overwrite_'3dpr'_modes_project_oomp_mode_false_oomp_run_11_width_12_height_24_thickness_project_oomp_classification_github_oomp_type_oomlout_oomp_size_oomlout_oobb_organizing_project_bolt_pac_oomp_color_base_only_extra_14_232.76943794472976_3_size_0_0_137.504050841607_rot
-  - oobb_holes_shape_p_type_24_depth_none_save_type_false_navigation_true_overwrite_'3dpr'_modes_project_oomp_mode_false_oomp_run_11_width_12_height_24_thickness_project_oomp_classification_github_oomp_type_oomlout_oomp_size_oomlout_oobb_organizing_project_bolt_pac_oomp_color_base_only_extra_false_both_holes_single_holes_1_1_1_12_11_1_11_12_6.0_1_9_1_3_1_1_4_11_4_1_8_11_8_1_1_1_12_11_1_11_12_location
+  - oobb_plate_shape_positive_type_3_depth_0_82.5_0_pos_all_typ_all_save_type_true_navigation_true_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_11_width_1_height_24_thickness_project_oomp_classification_github_oomp_type_oomlout_oomp_size_oomlout_oobb_organizing_project_bolt_pac_oomp_color_base_only_extra
+  - oobb_plate_shape_positive_type_3_depth_0_-82.5_0_pos_all_typ_all_save_type_true_navigation_true_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_11_width_1_height_24_thickness_project_oomp_classification_github_oomp_type_oomlout_oomp_size_oomlout_oobb_organizing_project_bolt_pac_oomp_color_base_only_extra
+  - oobb_plate_shape_positive_type_3_depth_75.0_0_0_pos_all_typ_all_save_type_true_navigation_true_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_1_width_12_height_24_thickness_project_oomp_classification_github_oomp_type_oomlout_oomp_size_oomlout_oobb_organizing_project_bolt_pac_oomp_color_base_only_extra
+  - oobb_plate_shape_positive_type_3_depth_-75.0_0_0_pos_all_typ_all_save_type_true_navigation_true_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_1_width_12_height_24_thickness_project_oomp_classification_github_oomp_type_oomlout_oomp_size_oomlout_oobb_organizing_project_bolt_pac_oomp_color_base_only_extra
+  - rounded_rectangle_shape_positive_type_all_typ_all_save_type_true_navigation_true_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_11_width_12_height_24_thickness_project_oomp_classification_github_oomp_type_oomlout_oomp_size_oomlout_oobb_organizing_project_bolt_pac_oomp_color_base_only_extra_14_232.76943794472976_3_size_0_0_42.49594915839299_rot
+  - rounded_rectangle_shape_positive_type_all_typ_all_save_type_true_navigation_true_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_11_width_12_height_24_thickness_project_oomp_classification_github_oomp_type_oomlout_oomp_size_oomlout_oobb_organizing_project_bolt_pac_oomp_color_base_only_extra_14_232.76943794472976_3_size_0_0_137.504050841607_rot
+  - oobb_holes_shape_p_type_24_depth_all_typ_all_save_type_true_navigation_true_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_11_width_12_height_24_thickness_project_oomp_classification_github_oomp_type_oomlout_oomp_size_oomlout_oobb_organizing_project_bolt_pac_oomp_color_base_only_extra_false_both_holes_single_holes_1_1_1_12_11_1_11_12_6.0_1_9_1_3_1_1_4_11_4_1_8_11_8_1_1_1_12_11_1_11_12_location
   description: oomlout oobb organizing project bolt pac version 3 11x12x24
   description_extra: base_only_extra
   description_main: 11_width_12_height_24_mm_depth

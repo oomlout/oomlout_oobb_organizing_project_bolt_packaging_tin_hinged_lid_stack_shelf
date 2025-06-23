@@ -131,6 +131,7 @@ def make_scad(**kwargs):
         sizes = []
         sizes.append([9,14])
         sizes.append([11,12]) #version 2
+        sizes.append([11,11]) #version 2
 
         for nam in names:
             for ex in extras:
