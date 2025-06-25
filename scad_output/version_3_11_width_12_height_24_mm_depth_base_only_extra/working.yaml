@@ -1,0 +1,41 @@
+classification: project
+color: oomlout_oobb_organizing_project_bolt_pac
+description_extra: base_only_extra
+description_main: version_3_11_width_12_height_24_mm_depth
+full_rotations:
+- 0
+- 0
+- 0
+full_shift:
+- 0
+- 0
+- 0
+id: project_github_oomlout_oomlout_oobb_organizing_project_bolt_pac_version_3_11_width_12_height_24_mm_depth_base_only_extra
+id_oobb: oobb_part_oomlout_oobb_organizing_project_bolt_pac_version_3_11_width_12_height_24_mm_depth_base_only_extra
+kwargs:
+  extra: base_only
+  filter: ''
+  height: 12
+  modes:
+  - 3dpr
+  navigation: true
+  oomp_classification: project
+  oomp_color: oomlout_oobb_organizing_project_bolt_pac
+  oomp_description_extra: base_only_extra
+  oomp_description_main: version_3_11_width_12_height_24_mm_depth
+  oomp_manufacturer: ''
+  oomp_mode: project
+  oomp_part_number: ''
+  oomp_run: false
+  oomp_size: oomlout
+  oomp_type: github
+  overwrite: true
+  thickness: 24
+  type: oomlout_oobb_organizing_project_bolt_pac_version_3
+  width: 11
+manufacturer: ''
+name: version_3
+part_number: ''
+project_name: C:\gh\oomlout_oobb_organizing_project_bolt_packaging_tin_hinged_lid_stack_shelf
+size: oomlout
+type: github
